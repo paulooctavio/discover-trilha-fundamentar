@@ -1,0 +1,46 @@
+<!--
+    2 stores
+        Create a table that displays how many products were manufactured and how many products were sold grouped by product name.
+-->
+
+<table>
+    <caption>Manafactured x Sold per Store</caption>
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: red">
+        <col span="2" style="background-color: blue">
+    </colgroup>
+    <thead>
+        <tr>
+            <th rowspan="2"></th> <!-- rowspan: to make a cell span over multiple rows -->
+            <th colspan="2" scope="colgroup">Store 1</th> <!-- colspan: to make a cell span over multiple columns -->
+            <th colspan="2" scope="colgroup">Store 2</th> <!-- colspan: to make a cell span over multiple columns -->
+        </tr>
+
+        <tr>
+            <th scope="col">Manufactured</th>
+            <th scope="col">Sold</th>
+            <th scope="col">Manufactured</th>
+            <th scope="col">Sold</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Brooms</th>
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Buckets</th>
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- The scope attribute specifies whether a header cell is a header for a column, row, or group of columns or rows. Note: The scope attribute has no visual effect in ordinary web browsers, but can be used by screen readers. -->
